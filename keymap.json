@@ -1,6 +1,9 @@
-// From
+// Lazyvim base from
 // https://www.reddit.com/r/ZedEditor/comments/1jvo98k/zed_with_lazyvim_keymaps_my_perfect_editor_setup/?tl=pt-br
 // https://gist.github.com/oca159/0b480ed6555056418905b6e59af33674
+//
+// Default Linux keymaps available at
+// https://github.com/zed-industries/zed/blob/main/assets/keymaps/default-linux.json
 [
     // Terminal
     {
@@ -135,13 +138,21 @@
             "[ b": "pane::ActivatePreviousItem",
             "H": "pane::ActivatePreviousItem",
             "L": "pane::ActivateNextItem",
+            // Buffer explorer
             "space ,": "tab_switcher::Toggle",
+            "space b e": "tab_switcher::Toggle",
             // Jump to the previous location
             "space b b": "pane::AlternateFile",
             // Close buffer
             "space b d": "pane::CloseActiveItem",
             // Close inactive buffers
             "space b q": "pane::CloseInactiveItems",
+            // Close buffers to the left
+            "space b l": "pane::CloseItemsToTheLeft",
+            // Close buffers to the right
+            "space b r": "pane::CloseItemsToTheRight",
+            // Close all buffers
+            "space b a": "pane::CloseAllItems",
             // New file
             "space b n": "workspace::NewFile",
             // Search in the current buffer
