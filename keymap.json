@@ -133,6 +133,8 @@
             "space 0": "pane::ActivateLastItem",
             "] b": "pane::ActivateNextItem",
             "[ b": "pane::ActivatePreviousItem",
+            "H": "pane::ActivatePreviousItem",
+            "L": "pane::ActivateNextItem",
             "space ,": "tab_switcher::Toggle",
             // Jump to the previous location
             "space b b": "pane::AlternateFile",
