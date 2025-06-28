@@ -306,9 +306,14 @@
     },
     "format_on_save": "on",
     "auto_install_extensions": {
+        // Themes and tools
         "xy-zed": true,
+        "git-firefly": true,
+        // Languages
         "solidity": true,
         "html": true,
-        "git-firefly": true
+        "make": true,
+        "log": true,
+        "toml": true
     }
 }
