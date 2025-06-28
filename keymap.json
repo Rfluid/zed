@@ -153,6 +153,8 @@
             "space b l": "pane::CloseItemsToTheLeft",
             // Close buffers to the right
             "space b r": "pane::CloseItemsToTheRight",
+            // Close other buffers
+            "space b o": "pane::CloseInactiveItems",
             // Close all buffers
             "space b a": "pane::CloseAllItems",
             // New file
