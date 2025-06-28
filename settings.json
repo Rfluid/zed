@@ -7,7 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 //
-// From
+// Lazyvim base from
 // https://www.reddit.com/r/ZedEditor/comments/1jvo98k/zed_with_lazyvim_keymaps_my_perfect_editor_setup/?tl=pt-br
 // https://gist.github.com/oca159/596dc2030c8593045e97a8d8509ff996
 {
@@ -41,7 +41,7 @@
         },
         "enabled_in_text_threads": false
     },
-    "icon_theme": "Zed (Default)",
+    "icon_theme": "Material Icon Theme",
     "notification_panel": {
         "enabled": false,
         "button": false
@@ -309,6 +309,7 @@
         // Themes and tools
         "xy-zed": true,
         "git-firefly": true,
+        "material-icon-theme": true,
         // Languages
         "solidity": true,
         "html": true,
