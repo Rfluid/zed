@@ -83,7 +83,9 @@
             // Search in all the files
             "space s g": "workspace::NewSearch",
             // Quit zed
-            "space q q": "zed::Quit"
+            "space q q": "zed::Quit",
+            // File explorer
+            "space e": "workspace::ToggleLeftDock"
         }
     },
     {
