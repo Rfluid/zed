@@ -193,7 +193,8 @@
     },
     "tabs": {
         "file_icons": true,
-        "git_status": true
+        "git_status": true,
+        "show_diagnostics": "errors"
     },
     // Indentation, rainbow indentation
     "indent_guides": {
