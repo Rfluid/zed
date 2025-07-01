@@ -76,6 +76,8 @@
         "bindings": {
             // Open file finder
             "space space": "file_finder::Toggle",
+            // Search
+            "space /": "workspace::NewSearch",
             // New file
             "space f n": "workspace::NewFile",
             // Open recent project
