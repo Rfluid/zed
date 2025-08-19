@@ -53,7 +53,34 @@
         }
     },
     "show_edit_predictions": true,
-    "languages": {},
+    "languages": {
+        "HTML": {
+            "language_servers": ["angular", "..."],
+            "formatter": "prettier",
+            "format_on_save": "on"
+        },
+        "Python": {
+            // Ruff extension documentation: https://docs.astral.sh/ruff/editors/setup/#zed
+            "language_servers": ["ruff", "pyright"],
+            "format_on_save": "on",
+            // Formatting with ruff
+            "formatter": [
+                {
+                    "code_actions": {
+                        // Fix all auto-fixable lint violations
+                        "source.fixAll.ruff": true,
+                        // Organize imports
+                        "source.organizeImports.ruff": true
+                    }
+                },
+                {
+                    "language_server": {
+                        "name": "ruff"
+                    }
+                }
+            ]
+        }
+    },
     "lsp": {
         "gopls": {
             "gofumpt": true,
@@ -61,19 +88,6 @@
                 "gofumpt": true
             }
         }
-        // "rust-analyzer": {
-        //     "initialization_options": {
-        //         "check": {
-        //             "command": "clippy" // rust-analyzer.check.command (default: "check")
-        //         }
-        //     },
-        //     "format_on_save": {
-        //         "external": {
-        //             "command": "cargo clippy --fix",
-        //             "arguments": []
-        //         }
-        //     }
-        // },
     },
     "tab_size": 4,
     "hard_tabs": false,
@@ -182,7 +196,7 @@
     "buffer_font_size": 14,
     "buffer_font_family": "FiraCode Nerd Font",
     "ui_font_family": "FiraCode Nerd Font",
-    "autosave": "on_focus_change",
+    "autosave": "off",
     "theme": {
         "mode": "dark",
         "light": "One Light",
@@ -213,6 +227,7 @@
         "html": true,
         "make": true,
         "log": true,
-        "toml": true
+        "toml": true,
+        "ruff": true
     }
 }
