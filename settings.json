@@ -48,8 +48,8 @@
     "agent": {
         "default_profile": "ask",
         "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-3-7-sonnet-latest"
+            "provider": "google",
+            "model": "gemini-2.5-pro"
         }
     },
     "show_edit_predictions": true,
@@ -206,7 +206,7 @@
         "whole_word": false,
         "case_sensitive": true,
         "include_ignored": false,
-        "regex": false
+        "regex": true
     },
     "preferred_line_length": 120,
     "features": {
@@ -229,5 +229,12 @@
         "log": true,
         "toml": true,
         "ruff": true
+    },
+    "show_completions_on_input": true,
+    "minimap": {
+        "show": "always",
+        "thumb": "always",
+        "thumb_border": "left_open",
+        "current_line_highlight": null
     }
 }
